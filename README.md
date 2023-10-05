@@ -20,7 +20,7 @@ A simple application to play unique sound effects for each key press on the keyb
    ```bash
    pip install keyboard pydub simpleaudio
    
-3. Install ffmpeg. Refer to the official ![ffmpeg documentation](https://ffmpeg.org/download.html) for installation instructions.
+3. Install ffmpeg. Refer to the official [ffmpeg documentation](https://ffmpeg.org/download.html) for installation instructions.
 
 ## Usage
 
