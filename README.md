@@ -18,7 +18,7 @@ A simple application to play unique sound effects for each key press on the keyb
    
 2. Install the required Python libraries:
    ```bash
-   pip install keyboard pydub simpleaudio
+   pip install pygame
    
 3. Install ffmpeg. Refer to the official [ffmpeg documentation](https://ffmpeg.org/download.html) for installation instructions.
 
