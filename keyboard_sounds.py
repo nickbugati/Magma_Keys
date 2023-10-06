@@ -1,7 +1,9 @@
 import keyboard
-from pydub import AudioSegment
-from pydub.playback import play
-import threading  # Import the threading module
+import pygame
+import threading
+
+# Initialize pygame mixer
+pygame.mixer.init()
 
 # Load sound files
 SOUND_FOLDER = 'sounds'
@@ -19,18 +21,15 @@ keys_to_track = [
 for key in keys_to_track:
     try:
         sound_path = f"{SOUND_FOLDER}/{key}.mp3"
-        SOUNDS[key] = AudioSegment.from_mp3(sound_path)
+        SOUNDS[key] = pygame.mixer.Sound(sound_path)
     except:
         print(f"Couldn't load sound for {key}")
-
-def threaded_play(sound):  # Function to play sound in a separate thread
-    play(sound)
 
 def play_sound(e):
     if e.event_type == keyboard.KEY_DOWN:  # Ensure the event is a key press
         key = e.name
         if key in SOUNDS:
-            threading.Thread(target=threaded_play, args=(SOUNDS[key],)).start()  # Start a new thread to play the sound
+            SOUNDS[key].play()
 
 # Hook every key
 keyboard.hook(play_sound)
