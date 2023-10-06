@@ -1,6 +1,5 @@
 import keyboard
 import pygame
-import threading
 
 # Initialize pygame mixer
 pygame.mixer.init()
