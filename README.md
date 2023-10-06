@@ -30,3 +30,5 @@ A simple application to play unique sound effects for each key press on the keyb
 
 ## Note
 Ensure that the names of your sound files match the expected key names as defined in the `keyboard_sounds.py` script.
+
+This branch is the same as `main`, except all the sound files are shorter **(1 second long max)**
