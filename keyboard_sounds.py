@@ -6,7 +6,7 @@ pygame.mixer.init()
 
 # Load the sound file
 SOUND_FOLDER = 'sounds'
-SOUND_FILE = 'main.mp3'  
+SOUND_FILE = 'munch.mp3'  
 sound_effect = pygame.mixer.Sound(f"{SOUND_FOLDER}/{SOUND_FILE}")
 
 def play_sound(e):

@@ -23,10 +23,10 @@ A simple application to play unique sound effects for each key press on the keyb
 
 ## Usage
 
-1. Place your **main.mp3** file (in mp3 format) inside the sounds directory.
+1. Place your sound file of choice (in mp3 format) inside the sounds directory.
 2. Run `keyboard_sounds.py`:
    ```bash
    python keyboard_sounds.py
 
 ## Note
-Ensure that the names of your sound file matches the expected key name as defined in the `keyboard_sounds.py` script (**main.mp3**).
+Ensure that the names of your sound file matches the expected key name as defined in the `keyboard_sounds.py` script.
